@@ -1,6 +1,5 @@
-// NOTE: added jQuery supporting using:
-//       http://benalman.com/code/javascript/jquery/jquery.ba-run-code-bookmarklet.js
-
+// add jQuery supporting using:
+// http://benalman.com/code/javascript/jquery/jquery.ba-run-code-bookmarklet.js
 (function( window, document, req_version, callback, $, script, done, readystate ){
 
   // If jQuery isn't loaded, or is a lower version than specified, load the
@@ -43,6 +42,12 @@
     '$:nomunge, L:nomunge'; // Used by YUI compressor.
 
     /* YOUR JQUERY CODE GOES HERE */
-    alert("page title: " + $(document).attr('title'));
+    csvXform_run();
   }
 );
+
+// ----------------------------------------------------------------- //
+
+function csvXform_run() {
+  alert("page title: " + $(document).attr('title'));
+}
